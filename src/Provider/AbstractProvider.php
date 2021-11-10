@@ -14,9 +14,11 @@
 
 namespace League\OAuth2\Client\Provider;
 
-use GuzzleHttp\Client as HttpClient;
-use GuzzleHttp\ClientInterface as HttpClientInterface;
-use GuzzleHttp\Exception\BadResponseException;
+#use Http\Client\HttpClient;
+#use Http\Discovery\HttpClientDiscovery;
+use League\OAuth2\Client\Tool\Guzzle5AdapterClient as HttpClient;
+use Http\Client\HttpClient as HttpClientInterface;
+use Http\Client\Exception\RequestException as BadResponseException;
 use League\OAuth2\Client\Grant\AbstractGrant;
 use League\OAuth2\Client\Grant\GrantFactory;
 use League\OAuth2\Client\OptionProvider\OptionProviderInterface;

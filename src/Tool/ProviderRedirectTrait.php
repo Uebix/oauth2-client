@@ -2,7 +2,7 @@
 
 namespace League\OAuth2\Client\Tool;
 
-use GuzzleHttp\Exception\BadResponseException;
+use Http\Client\Exception\RequestException as BadResponseException;
 use GuzzleHttp\Psr7\Uri;
 use InvalidArgumentException;
 use Psr\Http\Message\RequestInterface;
